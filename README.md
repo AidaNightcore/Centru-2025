@@ -9,7 +9,7 @@
 
 ---
 
-<p align="center"> Few lines describing your project.
+<p align="center"> This project was created as an educational resource for students and beginners who want to learn the basics of front-end web development.
     <br> 
 </p>
 
@@ -24,7 +24,6 @@
 
 ## 🧐 About <a name = "about"></a>
 
-This project was created as an educational resource for students and beginners who want to learn the basics of front-end web development.
 The website is intended to be used during lessons or self-study sessions, where learners can follow along with the teacher, inspect the code, and experiment with the examples in real time and can compare their files and understand if and where they made any mistakes.
 
 If you want to learn or clarify concepts with games, use these websites:
