@@ -1,30 +1,48 @@
+@import url("https://fonts.googleapis.com/css2?family=Fredoka:wght@300..700&family=Google+Sans+Flex:opsz,wght@6..144,1..1000&display=swap");
+
 :root {
   --background: #f7f8fc;
-  --accent: #5865cb;
+  --primary: #715df2;
+  --accent: #fdaa32;
   --text: #303030;
+  --shadow: 30, 30, 30;
 }
 
 body {
   margin: 0;
   padding: 0;
-  color: #303030;
-  background-color: #f7f8fc;
+  color: var(--text);
+  background-color: var(--background);
   font-size: 1rem;
   min-height: 100vh;
+  min-width: 100vw;
+  align-items: center;
+  justify-content: center;
+  font-family: "Google Sans Flex", sans-serif;
+}
+
+h1,
+h2,
+h3 {
+  font-weight: 800;
 }
 
 a {
   text-decoration: none;
-  color: #303030;
+  text-transform: uppercase;
 }
 
-.flex {
+.flex-vertical {
+  display: flex;
+  flex-direction: column;
+}
+.flex-horizontal {
   display: flex;
   flex-direction: row;
 }
-
 .nav-img {
   height: 5vh;
+  filter: hue-rotate(210deg) brightness(70%) saturate(2);
 }
 
 .nav-list {
@@ -39,26 +57,323 @@ a {
 }
 
 .nav-list > li > a {
-  color: var(--accent);
+  color: var(--primary);
+}
+
+.shadow {
+  box-shadow: 0 0.3rem 0.5rem 0.1rem rgba(var(--shadow), 20%);
 }
 
 #bag-list > a {
   color: var(--background);
-  background-color: var(--accent);
-  padding: 0.5rem 1.5rem;
+  background-color: var(--primary);
+  padding: 0.5rem 1rem 0.5rem 2rem;
   border-radius: 2rem;
-  box-shadow: 0 0.3rem 0.6rem 0.3rem #30303020;
+  box-shadow: 0 0.3rem 0.5rem 0.1rem rgba(var(--shadow), 20%);
 }
 
 #sign-list > a {
   color: var(--background);
-  background-color: #faab35;
-  padding: 0.5rem 1.5rem;
+  background-color: var(--accent);
+  padding: 0.5rem 2rem;
   border-radius: 2rem;
-  box-shadow: 0 0.3rem 0.6rem 0.3rem #30303020;
+  box-shadow: 0 0.3rem 0.5rem 0.1rem rgba(var(--shadow), 20%);
+}
+.bxs-shopping-bag {
+  margin-left: 1rem;
 }
 
 nav {
   justify-content: space-between;
+  font-weight: 500;
+}
+
+header {
+  position: sticky;
+  top: 0;
+  left: 0;
+  background-color: var(--background);
+  z-index: 2;
+  min-width: 100vw;
+}
+
+.wave {
+  width: 100vw;
+  aspect-ratio: 960/200;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+}
+
+#wave1 {
+  background-image: url(assets/wave1.svg);
+}
+
+#wave2 {
+  background-image: url(assets/wave2.svg);
+}
+
+main,
+footer,
+main > section.flex-vertical,
+#landing-background {
+  align-items: center;
+  justify-content: center;
+}
+
+footer {
+  width: 100vw;
+  background-color: var(--primary);
+  color: var(--background);
+}
+
+footer > a {
+  color: var(--background);
+}
+
+#landing-background {
+  background: url(assets/backgroundLanding.svg) no-repeat bottom;
+  background-size: cover;
+  width: 100vw;
+}
+#img-landing {
+  filter: drop-shadow(2rem 2.5rem 0.3rem rgba(var(--shadow), 0.15));
+  transform: rotate(5deg);
+}
+
+#gallery-img {
+  height: 80vh;
+  filter: drop-shadow(-5rem 2.5rem 0.3rem rgba(var(--shadow), 0.15));
+  transform: rotate(-20deg);
+}
+#email-registration {
+  background-color: var(--background);
+  border: var(--background) 0.4rem solid;
+  border-radius: 3rem;
+  align-items: center;
+  justify-content: start;
+  gap: 0.5rem;
+  padding-left: 1rem;
+  width: 23vw;
+  margin-top: 3rem;
+  box-shadow: 0 0.7rem 1rem 0.5rem rgba(var(--shadow), 15%);
+}
+#landing-form {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
   width: 100%;
+}
+.bxs-envelope {
+  font-size: 1.5rem;
+  color: var(--text);
+  opacity: 0.4;
+}
+
+.send-button {
+  border: none;
+  border-radius: 2.96rem;
+  background-color: var(--primary);
+  color: var(--background);
+  padding: 1rem 2rem;
+  text-transform: uppercase;
+}
+
+input {
+  border: none;
+  background-color: var(--background);
+  font-family: "Google Sans Flex", sans-serif;
+}
+
+.input-form {
+  width: 90%;
+}
+
+#subscribe-section {
+  background: url(assets/headphonesBackground.png) no-repeat center;
+  background-size: contain;
+}
+
+#tech-section {
+  background-color: var(--primary);
+  width: 100vw;
+  align-items: center;
+  justify-content: center;
+}
+
+.section-title {
+  color: var(--primary);
+  font-size: 4rem;
+  width: 30vw;
+  line-height: 0.8;
+  margin: 1rem;
+}
+
+#landing-text {
+  justify-content: center;
+}
+
+#landing {
+  height: 100vh;
+  align-items: center;
+}
+#landing-text > p {
+  font-size: 1.4rem;
+  color: var(--text);
+  opacity: 0.5;
+  width: 23vw;
+  margin: 1rem;
+}
+
+.accent {
+  color: var(--accent);
+}
+
+.subtitle {
+  font-size: 2rem;
+  color: var(--background);
+  margin: 0;
+}
+
+#features {
+  box-shadow: 0 2rem 3rem 0.2rem rgba(var(--shadow), 20%);
+}
+
+#features-text {
+  background: var(--primary);
+  color: var(--background);
+  padding: 3rem;
+  border-radius: 0.5rem 0 0 0.5rem;
+}
+
+#features-text > a {
+  background-color: var(--background);
+  color: var(--primary);
+  width: max-content;
+  padding: 1rem 3rem;
+  border-radius: 3rem;
+  box-shadow: 0 0.5rem 1rem 0.3rem rgba(var(--shadow), 20%);
+  margin-top: 5rem;
+}
+
+#features-text > ul {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+}
+
+#features-text > ul > li {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+
+#features-text > ul > li::before {
+  content: "";
+  display: inline-block;
+  height: 2rem;
+  width: 2rem;
+  background-image: url(assets/checkList.png);
+  background-size: contain;
+  background-repeat: no-repeat;
+  margin-right: 0.5rem;
+}
+
+#features-grid > div > .bx {
+  font-size: 3rem;
+}
+
+#features-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-template-rows: repeat(2, 1fr);
+  color: var(--primary);
+  background-color: var(--background);
+  border-radius: 0 0.5rem 0.5rem 0;
+}
+
+#features-grid > div {
+  align-items: center;
+  justify-content: center;
+  border: rgba(var(--shadow), 0.05) solid 0.01rem;
+  text-transform: uppercase;
+  padding: 3.5rem 7rem;
+}
+
+#design {
+  grid-area: 1 / 1 / 2 / 2;
+}
+#battery {
+  grid-area: 1 / 2 / 2 / 3;
+}
+#weight {
+  grid-area: 2 / 1 / 3 / 2;
+}
+#deviceControls {
+  grid-area: 2 / 2 / 3 / 3;
+}
+
+#techSpec > h2 > span:first-child {
+  color: var(--accent);
+  font-weight: 200;
+  text-transform: uppercase;
+}
+
+#techSpec > h2 > span:nth-child(2) {
+  color: var(--primary);
+  text-transform: uppercase;
+}
+
+#techSpec > h2 > span:last-child {
+  color: #cb95e3;
+  font-weight: 200;
+  text-transform: uppercase;
+}
+#techSpec > h2,
+#techSpec {
+  align-items: center;
+  justify-content: center;
+  width: min-content;
+}
+
+#techSpec > h2 {
+  font-size: 3rem;
+  gap: 0.7rem;
+}
+
+#techSpec {
+  background-color: var(--background);
+  box-shadow: 0 0.5rem 1rem 0.3rem rgba(var(--shadow), 15%);
+}
+#gallery {
+  gap: 10vw;
+}
+#gallery > div {
+  gap: 2rem;
+}
+
+#color-selection-div {
+  background-color: var(--background);
+  box-shadow: 0 0.5rem 1rem 0.3rem rgba(var(--shadow), 15%);
+  border-radius: 10rem;
+  align-items: center;
+  justify-content: space-evenly;
+  gap: 1rem;
+  padding: 1rem;
+}
+#color-selection-div > button {
+  width: 4vw;
+  height: 4vw;
+  border-radius: 100%;
+  box-shadow: 0 1rem 0.5rem 0.2rem rgba(var(--shadow), 15%);
+}
+
+#color-selection-div > button:nth-child(1) {
+  background: url(assets/background.jpg) no-repeat center;
+}
+#color-selection-div > button:nth-child(2) {
+  background: url(assets/background\(1\).jpg) no-repeat center;
+}
+#color-selection-div > button:nth-child(3) {
+  background: url(assets/Background\(2\).jpg) no-repeat center;
 }

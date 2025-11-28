@@ -7,127 +7,146 @@
       href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css"
       rel="stylesheet"
     />
+    <link rel="shortcut icon" href="assets/favicon.svg" type="image/x-icon" />
     <link rel="stylesheet" href="styles.css" />
     <title>Headphones</title>
   </head>
-  <body>
+  <body class="flex-vertical">
     <header>
-      <nav class="flex">
-        <div class="flex">
+      <nav class="flex-horizontal">
+        <div class="flex-horizontal">
           <img class="nav-img" src="./assets/LogoLine.png" alt="logo site" />
           <div>
-            <ul class="flex nav-list">
-              <li><a href="">Features</a></li>
-              <li><a href="">Gallery</a></li>
-              <li><a href="">Tech Spec</a></li>
-              <li><a href="">Support</a></li>
+            <ul class="flex-horizontal nav-list">
+              <li><a href="#features">Features</a></li>
+              <li><a href="#gallery">Gallery</a></li>
+              <li><a href="#techSpec">Tech Spec</a></li>
+              <li><a href="" target="_blank">Support</a></li>
             </ul>
           </div>
         </div>
         <div>
-          <ul class="flex nav-list">
+          <ul class="flex-horizontal nav-list">
             <li id="bag-list">
-              <a href="">Show Bag <i class="bx bxs-shopping-bag"></i></a>
+              <a href="" target="_blank"
+                >Show Bag <i class="bx bxs-shopping-bag"></i
+              ></a>
             </li>
-            <li id="sign-list"><a href="">Sign Up</a></li>
+            <li id="sign-list"><a href="" target="_blank">Sign Up</a></li>
           </ul>
         </div>
       </nav>
     </header>
-    <main>
-      <section>
-        <div>
-          <h1>Lorem ipsum dolor sit amet.</h1>
-          <p>
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Totam nisi
-            placeat minus? Ducimus, saepe laudantium.
-          </p>
-          <div>
-            <i></i>
-            <form action="">
-              <input type="email" placeholder="Write your email" />
-              <button type="submit">Send</button>
-            </form>
+    <main class="flex-vertical">
+      <div id="landing-background" class="flex-vertical">
+        <section class="flex-horizontal" id="landing">
+          <div id="landing-text" class="flex-vertical">
+            <h1 class="section-title">
+              Premium, truly wireless on-ear earphones
+            </h1>
+            <p>
+              You simply won't want to take them off. And with up to 30 hours of
+              playtime you won't have to.
+            </p>
+            <div class="flex-horizontal" id="email-registration">
+              <i class="bx bxs-envelope"></i>
+              <form action="" id="landing-form">
+                <input
+                  class="input-form"
+                  type="email"
+                  placeholder="Write your email"
+                />
+                <button class="send-button" type="submit">Send</button>
+              </form>
+            </div>
           </div>
-        </div>
-        <div>
-          <img src="" alt="Colourful Headphones" />
-        </div>
-      </section>
+          <div>
+            <img
+              src="assets/headphones.png"
+              id="img-landing"
+              alt="Colourful Headphones"
+            />
+          </div>
+        </section>
 
-      <section>
-        <div>
-          <div>
-            <p>Design by:</p>
-            <h2>Headphone</h2>
-            <ul>
-              <li>4 hours of playtime on one charge</li>
-              <li>Intuitive touch interface, with microphone</li>
-              <li>High quality control</li>
-            </ul>
-            <a href="">Learn more</a>
+        <section id="features">
+          <div class="flex-horizontal">
+            <div class="flex-vertical" id="features-text">
+              <p class="accent">Design by:</p>
+              <h2 class="subtitle">Headphone</h2>
+              <ul class="flex-vertical">
+                <li>4 hours of playtime on one charge</li>
+                <li>Intuitive touch interface, with microphone</li>
+                <li>High quality control</li>
+              </ul>
+              <a href="" target="_blank">Learn more</a>
+            </div>
+            <div id="features-grid">
+              <div id="design" class="flex-vertical">
+                <i class="bx bxs-eyedropper"></i>
+                <p>Design</p>
+              </div>
+              <div id="battery" class="flex-vertical">
+                <i class="bx bx-battery"></i>
+                <p>Battery</p>
+              </div>
+              <div id="deviceControls" class="flex-vertical">
+                <i class="bx bx-user-voice"></i>
+                <p>Device Controls</p>
+              </div>
+              <div id="weight" class="flex-vertical">
+                <i class="bx bx-bowling-ball"></i>
+                <p>Weight</p>
+              </div>
+            </div>
           </div>
-          <div>
-            <div>
-              <i></i>
-              <p>Design</p>
+        </section>
+      </div>
+      <section class="flex-vertical">
+        <div id="gallery" class="flex-horizontal">
+          <img id="gallery-img" src="assets/headphones (1).png" alt="" />
+          <div class="flex-vertical" >
+            <div id="color-selection-div" class="flex-horizontal">
+              <button id="buttonColor1"></button>
+              <button id="buttonColor2"></button>
+              <button id="buttonColor3"></button>
             </div>
-            <div>
-              <i></i>
-              <p>Cord</p>
-            </div>
-            <div>
-              <i></i>
-              <p>Weight</p>
-            </div>
-            <div>
-              <i></i>
-              <p>Device Controls</p>
-            </div>
-          </div>
-        </div>
-      </section>
-      <section>
-        <div>
-          <img src="" alt="" />
-          <div>
-            <div>
-              <button></button>
-              <button></button>
-              <button></button>
-            </div>
-            <div>
-              <h2>
-                <span>The</span> <span><b>Color</b></span>
+            <div id="techSpec" class="flex-vertical">
+              <h2 class="section-title flex-vertical">
+                <span>The</span>
+                <span><b>Color</b></span>
                 <span>Collection</span>
               </h2>
               <p>Let the world in with one quick gesture</p>
-              <a href="">Explore</a>
+              <a href="" target="_blank">Explore</a>
             </div>
           </div>
         </div>
 
-        <div></div>
+        <div class="wave" id="wave1"></div>
 
-        <div>
-          <img src="" alt="" />
+        <div class="flex-horizontal" id="tech-section">
+          <img src="assets/headphones (2).png" alt="" />
           <div>
             <h2>Streamlined, on-ear wearing style</h2>
             <div>
-              <div>
-                <img src="" alt="" />
+              <div class="flex-horizontal">
+                <i class="bx bx-bluetooth"></i>
                 <div>
-                  <p><b></b></p>
-                  <p></p>
-                  <a href=""></a>
+                  <p class="subtitle"><b>Bluetooth</b></p>
+                  <p>Bluetooth 4.2 - AAC codec</p>
+                  <a href="" target="_blank">Learn More</a>
                 </div>
               </div>
-              <div>
-                <img src="" alt="" />
+              <div class="flex-horizontal">
+                <i class="bx bxs-microphone-alt"></i>
                 <div>
-                  <p><b></b></p>
-                  <p></p>
-                  <a href=""></a>
+                  <p class="subtitle"><b>Microphone</b></p>
+                  <p>
+                    Supports Apple Siri and Google <br />
+                    Now voice commands
+                  </p>
+                  <a href="" target="_blank">Learn More</a>
                 </div>
               </div>
             </div>
@@ -135,18 +154,18 @@
         </div>
       </section>
       <section>
-        <div>
-          <h2>Our latest headphones</h2>
+        <div class="flex-horizontal">
+          <h2 class="section-title">Our latest headphones</h2>
           <div>
-            <button><i></i></button>
-            <button><i></i></button>
+            <button><i class="bx bx-chevron-left"></i></button>
+            <button><i class="bx bx-chevron-right"></i></button>
           </div>
         </div>
         <div>
           <div>
-            <a href="">
+            <a href="" target="_blank">
               <img src="" alt="" />
-              <button><i></i></button>
+              <button><i class="bx bx-cart-add"></i></button>
               <div>
                 <img src="" alt="" />
               </div>
@@ -155,29 +174,41 @@
           </div>
         </div>
       </section>
-      <section>
-        <h2>Say Hello to Us</h2>
-        <form action="">
-          <div>
-            <i></i>
-            <input type="text" />
+      <section id="subscribe-section">
+        <h2 class="section-title">Say Hello to Us</h2>
+        <form action="" class="flex-horizontal">
+          <div class="input-form-logo">
+            <i class="bx bxs-user"></i>
+            <input
+              class="input-form"
+              type="text"
+              placeholder="Write your name"
+            />
           </div>
-          <div>
-            <i></i>
-            <input type="email" name="" id="" />
+          <div class="input-form-logo">
+            <i class="bx bxs-envelope"></i>
+            <input
+              input-form
+              type="email"
+              name=""
+              id=""
+              placeholder="Write your email"
+            />
             <button type="submit">Send</button>
           </div>
         </form>
       </section>
     </main>
-    <div></div>
-    <footer>
-      <p><span>Comfort</span> and materials</p>
+    <div class="wave" id="wave2"></div>
+    <footer class="flex-vertical">
+      <p>
+        <span class="accent"><b>COMFORT</b></span> and materials
+      </p>
       <p>&copy; 2025. All right reserved.</p>
-      <div>
-        <a href=""><i></i></a>
-        <a href=""><i></i></a>
-        <a href=""><i></i></a>
+      <div class="flex-horizontal">
+        <a href="" target="_blank"><i class="bx bxl-twitter"></i></a>
+        <a href="" target="_blank"><i class="bx bxl-youtube"></i></a>
+        <a href="" target="_blank"><i class="bx bxl-linkedin"></i></a>
       </div>
     </footer>
   </body>

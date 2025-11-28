@@ -73,7 +73,7 @@ code .
 
 ## 🎈 Usage <a name="usage"></a>
 
-This repository is updated after every lesson. Each commit represents the state of the website at the end of a specific session. It uses a [wireframe design]((https://ca.pinterest.com/pin/503981014567539413/)) to make the explanations more visual and easier for separation of the webpage in divs, sections etc. 
+This repository is updated after every lesson. Each commit represents the state of the website at the end of a specific session. It uses a [wireframe design](https://ca.pinterest.com/pin/503981014567539413/) to make the explanations more visual and easier for separation of the webpage in divs, sections etc.
 
 ### How to use the repository
 
