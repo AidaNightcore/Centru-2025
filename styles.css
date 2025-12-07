@@ -15,7 +15,7 @@ body {
   background-color: var(--background);
   font-size: 1rem;
   min-height: 100vh;
-  min-width: 100vw;
+  max-width: 100vw;
   align-items: center;
   justify-content: center;
   font-family: "Google Sans Flex", sans-serif;
@@ -52,12 +52,15 @@ a {
 }
 
 .nav-list > li {
-  padding: 0.5rem;
   margin: 0.5rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
 .nav-list > li > a {
   color: var(--primary);
+  padding: 0.5rem;
 }
 
 .shadow {
@@ -86,6 +89,8 @@ a {
 nav {
   justify-content: space-between;
   font-weight: 500;
+
+  width: 100vw;
 }
 
 header {
@@ -94,7 +99,7 @@ header {
   left: 0;
   background-color: var(--background);
   z-index: 2;
-  min-width: 100vw;
+  max-width: 100vw;
 }
 
 .wave {
@@ -344,12 +349,35 @@ input {
 #techSpec {
   background-color: var(--background);
   box-shadow: 0 0.5rem 1rem 0.3rem rgba(var(--shadow), 15%);
+  border-radius: 0.5rem;
+  gap: 2rem;
+  padding: 2rem;
 }
+
+#techSpec > a {
+  color: var(--primary);
+}
+
+#techSpec > a::after {
+  display: block;
+  clear: both;
+  content: "";
+  position: relative;
+  left: 0;
+  bottom: 0;
+  height: 2px;
+  width: 50%;
+  border-bottom: 2px solid var(--primary);
+  margin: 1rem auto;
+}
+
 #gallery {
   gap: 10vw;
+  align-items: center;
+  justify-content: center;
 }
 #gallery > div {
-  gap: 2rem;
+  gap: 3vh;
 }
 
 #color-selection-div {
@@ -376,4 +404,144 @@ input {
 }
 #color-selection-div > button:nth-child(3) {
   background: url(assets/Background\(2\).jpg) no-repeat center;
+}
+
+#tech-section {
+  align-items: flex-end;
+  justify-content: space-evenly;
+  padding-bottom: 10vw;
+}
+
+.border {
+  border-radius: 100%;
+  border: 2px var(--background) solid;
+  padding: 1rem;
+  width: max-content;
+  height: max-content;
+}
+
+.border > i {
+  border-radius: 100%;
+  border: 2px var(--background) dashed;
+  padding: 0.5rem;
+  font-size: 5rem;
+  color: var(--background);
+}
+
+.tech-description {
+  color: var(--background);
+  line-height: 2rem;
+}
+
+#tech-section > div > div > div > a {
+  color: var(--accent);
+  text-transform: uppercase;
+}
+
+#tech-section > div {
+  justify-content: center;
+  align-items: start;
+  gap: 4rem;
+}
+
+#tech-section > div > div {
+  gap: 2rem;
+  align-items: center;
+  justify-content: center;
+}
+
+#tech-section > div > .section-title {
+  color: var(--background);
+}
+
+#tech-section > img {
+  width: 20vw;
+}
+
+#shop {
+  background-image: radial-gradient(
+    circle at 1px 1px,
+    var(--text) 1px,
+    transparent 0
+  );
+  background-size: 50px 30px;
+}
+
+#shop > div {
+  align-items: center;
+  justify-content: space-around;
+}
+
+#shop-previous:not(.shop-active-button),
+#shop-next:not(.shop-active-button) {
+  background-color: var(--background);
+}
+
+#shop-previous,
+#shop-next {
+  padding: 1rem 2.5rem;
+  margin: 0;
+  font-size: 1.5rem;
+
+  border: rgba(var(--shadow), 0.4) 1px solid;
+}
+
+#shop-previous {
+  border-radius: 0.5rem 0 0 0.5rem;
+  /* border: rgba(var(--shadow), 0.4) 1px solid; */
+  border-right: none;
+  margin-right: 0;
+}
+
+#shop-next {
+  border-radius: 0 0.5rem 0.5rem 0;
+  border-left: none;
+  margin-left: 0;
+}
+
+.shop-active-button {
+  color: var(--background);
+  background-color: var(--primary);
+  border: var(--primary) 1px solid;
+}
+
+.shop-element-img {
+  width: 15vw;
+  position: absolute;
+
+  top: 0;
+  left: 50%;
+  z-index: 1;
+  margin-bottom: 3rem;
+}
+
+.shop-element {
+  position: relative;
+  width: 10vw;
+  height: 15vh;
+}
+
+.shop-add-element-button {
+  position: absolute;
+  top: 0;
+  right: 0;
+  z-index: 1;
+}
+
+.shop-element-background {
+  width: 10vw;
+  height: 10vw;
+  position: absolute;
+  top: 0;
+  left: 0%;
+  z-index: 0;
+}
+.shop-element-background > img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  overflow: hidden;
+}
+
+.shop-price {
 }

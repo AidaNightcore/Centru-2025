@@ -105,7 +105,7 @@
       <section class="flex-vertical">
         <div id="gallery" class="flex-horizontal">
           <img id="gallery-img" src="assets/headphones (1).png" alt="" />
-          <div class="flex-vertical" >
+          <div class="flex-vertical">
             <div id="color-selection-div" class="flex-horizontal">
               <button id="buttonColor1"></button>
               <button id="buttonColor2"></button>
@@ -127,49 +127,58 @@
 
         <div class="flex-horizontal" id="tech-section">
           <img src="assets/headphones (2).png" alt="" />
-          <div>
-            <h2>Streamlined, on-ear wearing style</h2>
-            <div>
-              <div class="flex-horizontal">
-                <i class="bx bx-bluetooth"></i>
-                <div>
-                  <p class="subtitle"><b>Bluetooth</b></p>
-                  <p>Bluetooth 4.2 - AAC codec</p>
-                  <a href="" target="_blank">Learn More</a>
-                </div>
+          <div class="flex-vertical">
+            <h2 class="section-title">
+              Streamlined, <br />
+              on-ear wearing style
+            </h2>
+            <div class="flex-horizontal">
+              <div class="border"><i class="bx bx-bluetooth"></i></div>
+              <div class="flex-vertical">
+                <p class="subtitle"><b>Bluetooth</b></p>
+                <p class="tech-description">Bluetooth 4.2 - AAC codec</p>
+                <a href="" target="_blank">Learn More</a>
               </div>
-              <div class="flex-horizontal">
-                <i class="bx bxs-microphone-alt"></i>
-                <div>
-                  <p class="subtitle"><b>Microphone</b></p>
-                  <p>
-                    Supports Apple Siri and Google <br />
-                    Now voice commands
-                  </p>
-                  <a href="" target="_blank">Learn More</a>
-                </div>
+            </div>
+            <div class="flex-horizontal">
+              <div class="border"><i class="bx bxs-microphone-alt"></i></div>
+              <div class="flex-vertical">
+                <p class="subtitle"><b>Microphone</b></p>
+                <p class="tech-description">
+                  Supports Apple Siri and Google <br />
+                  Now voice commands
+                </p>
+                <a href="" target="_blank">Learn More</a>
               </div>
             </div>
           </div>
         </div>
       </section>
-      <section>
+      <section id="shop">
         <div class="flex-horizontal">
           <h2 class="section-title">Our latest headphones</h2>
           <div>
-            <button><i class="bx bx-chevron-left"></i></button>
-            <button><i class="bx bx-chevron-right"></i></button>
+            <button id="shop-previous" class="shop-active-button">
+              <i class="bx bx-chevron-left"></i>
+            </button>
+            <button id="shop-next"><i class="bx bx-chevron-right"></i></button>
           </div>
         </div>
-        <div>
-          <div>
+        <div class="shop-element-generator">
+          <div class="shop-element">
             <a href="" target="_blank">
-              <img src="" alt="" />
-              <button><i class="bx bx-cart-add"></i></button>
-              <div>
-                <img src="" alt="" />
+              <img
+                class="shop-element-img"
+                src="assets/headphones (2).png"
+                alt=""
+              />
+              <button class="shop-add-element-button">
+                <i class="bx bx-cart-add"></i>
+              </button>
+              <div class="shop-element-background">
+                <img src="assets/background(1).jpg" alt="" />
               </div>
-              <p></p>
+              <p class="shop-price">399</p>
             </a>
           </div>
         </div>
